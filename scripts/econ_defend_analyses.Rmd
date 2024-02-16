@@ -7,7 +7,7 @@ output: html_document
 
 # SETUP
 
-``` {r message = F}
+``` {r, message = F}
 library(tidyverse)
 library(emmeans)
 library(lme4)
@@ -36,6 +36,7 @@ geo.box <- c(xmin = 123.4, xmax = 123.95, ymin = 24.2, ymax = 24.5)
 
 #too big for GitHub but freely available at https://www.ngdc.noaa.gov/mgg/shorelines/
 L1_gshhg_f <- read_sf("/Users/bostrome/Documents/Work/R-Scripts/Map shapefiles/gshhg-shp-2/GSHHS_shp/f/GSHHS_f_L1.shp") %>%
+
    st_crop(geo.box)
 
 figure_1 <- ggplot(data = L1_gshhg_f) +
@@ -115,7 +116,7 @@ iriomote_master_aggro %>%
    summarise(focals = n_distinct(focal.species),
              encts = n_distinct(encountered.species))
 
-#diversoty of species by year
+#diversity of species by year
 iriomote_master_aggro %>% 
    mutate(yr = as.factor(year(date)))%>%
    group_by(yr) %>% 
@@ -152,6 +153,7 @@ iriomote_master_aggro %>%
           survey_date = as.factor(day(date))) %>% 
    group_by(yr) %>% 
    summarise(n = n_distinct(recorder))
+
 ```
 ##Figure 2a
 
@@ -293,8 +295,6 @@ iriomote_master_coral %>%
  scale_y_continuous(sec.axis = sec_axis(~./coeff, name="Aggression (prob)"))+
     theme_classic()
  
- 
-
 ```
 ## Stats
 
@@ -384,7 +384,7 @@ iriomote_master_fish %>%
    summarise(n=sum(n))
 ```
 
-##summary stats
+<<<<<<< HEAD
 
 ```{r}
 #diversity of transect species
@@ -635,7 +635,6 @@ anova(feed_null, feed_alt)
 
 summary(feed_null)
 
-report(feed_null)
 
 plot(fitted(feed_null), residuals(feed_null))
 hist(residuals(feed_null))
