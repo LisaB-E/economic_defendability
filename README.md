@@ -1,4 +1,11 @@
-# Economic defendability
+# Reef fish aggression tracks resource availability throughout coral loss and recovery
+
+## Contents
+
+-   Find the **data** used [here](data/)
+-   See **scripts** used in analyses [here](scripts/)
+
+## Summary
 
 In this paper we explore how habitat loss and subsequent recovery influences behavior of a community of butterflyfishes.
 
@@ -14,4 +21,4 @@ This suggests that the community of butterflyfish altered their behaviour to con
 
 ![Figure 2: a) the relative abundance and community change of butterflyfish communities in Iriomote I. pre- and up to six years post-bleaching. The five most common species in each year are highlighted and labelled with species names. b) relative abundance of the three main feeding guilds of butterflyfish present on Iriomote I. reefs, c) principal component analysis of butterflyfish community structure. Dashed lined indicates the mass coral bleaching event.](figures/Figure%203.png)
 
-We conclude that while this community of coral reef fishes may have weathered the storm by reducing their aggression, this is not a good news story. First, this strategy is not available to species with limited behavioural flexibility. Second, this system recovered relatively rapidly, however with increasing frequency and severity of disturbances affecting coral reefs, full recovery is increasingly unlikely. 
+We conclude that while this community of coral reef fishes may have weathered the storm by reducing their aggression, this is not a good news story. First, this strategy is not available to species with limited behavioural flexibility. Second, this system recovered relatively rapidly, however with increasing frequency and severity of disturbances affecting coral reefs, full recovery is increasingly unlikely.
